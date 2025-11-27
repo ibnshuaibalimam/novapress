@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App 2</title>
+  <link rel="stylesheet" href="template2.css">
+</head>
+<body>
+    <div class="phone2" role="region" aria-label="authentication">
+    <div class="screen2" role="main">
+      <div>
+        <a class="back-button" href="index.html">&lt;</a>
+      </div>
+      <div class="logo">NP</div>
+      <div>
+        <h1>Login</h1>
+        <div class="lead">Please login to your account.</div>
+      </div>
+
+      <div class="login-card" style="margin-top:auto">
+        <form>
+          <div class="field">
+            <label for="email">E-mail Address</label>
+            <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="pwd">Password</label>
+            <input id="pwd" type="password" placeholder="••••••••" autocomplete="current-password" required />
+          </div>
+          <div class="form-footer">
+            <div class="container"><input class="box" id="remember" type="checkbox" /> <label class="remember-box" for="remember" style="font-size:13px;color:var(--muted);">Remember me</label></div>
+            <a href="#" style="text-decoration:none;color:var(--accent);font-weight:600">Forgot password?</a>
+          </div>
+          <div style="margin-top:14px">
+            <div class="actions">
+               <button class="btn primary" style="width:100%" type="submit">Login</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="divider" aria-hidden="true">Or</div>
+
+        <div class="socials" aria-label="Sign in options">
+        <button class="social" aria-label="Continue with Google">
+          
+          <!-- small G svg -->
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"></svg>
+          <img class="google" src="google.png" alt="google">
+          <span>Continue with Google</span>
+        </button>
+        <button class="social" aria-label="Continue with Apple">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"></svg>
+               <img class="apple" src="apple.jpg" alt="apple">
+          <span>Continue with Apple</span>
+        </button>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

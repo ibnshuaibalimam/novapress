@@ -1,0 +1,84 @@
+  :root{
+    --bg:#f0f2f4; --card:#fff; --accent:#0b0b0b; --muted:#8f98a0; --primary:#111;
+    --radius:22px; --gap:16px;
+    --btn-h:52px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background:var(--bg); color:var(--accent);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* center the whole phone mock */
+  .phone {
+    width:360px; max-width:95vw; margin:24px auto; background:transparent;
+    border-radius:28px; overflow:hidden; box-shadow:0 12px 40px rgba(10,20,30,0.08);
+  }
+
+  /* single screen (card) */
+  .screen {
+    background:var(--card); min-height:100%; padding:30px 24px; display:flex; flex-direction:column;
+  }
+
+  .brand {
+    display:flex; align-items:center; gap:12px; margin-bottom:18px;
+  }
+  .logo {
+    width:48px; height:48px; border-radius:12px; background:#111; display:inline-flex; align-items:center; justify-content:center;
+    color:#fff; font-weight:700; font-size:18px;
+  }
+  h1{margin:0; font-size:20px; letter-spacing:-0.2px}
+
+  .lead { color:var(--muted); font-size:13px; margin-top:8px; line-height:1.45; max-width:290px }
+
+  /* primary actions */
+  .actions{ margin-top:24px; display:flex; flex-direction:column; gap:12px }
+  .btn {
+    height:var(--btn-h); border-radius:14px; display:flex; align-items:center; justify-content:center;
+    font-weight:700; letter-spacing:.3px; cursor:pointer; border:0;
+  }
+.btn-button{
+  height:var(--btn-h); border-radius:14px; display:flex; align-items:center; justify-content:center;
+  font-weight:700; letter-spacing:.3px; cursor:pointer; border:0;
+  background: black;
+  color: white;
+  background:#111; border:2px solid #e6e8eb; color:#fff; font-weight:600;
+  text-decoration: none;
+}
+  .btn.primary{ background:#111; color:#fff; }
+  .btn.ghost { background:#111; border:2px solid #e6e8eb; color:#fff; font-weight:600 }
+
+  .divider { display:flex; align-items:center; gap:12px; margin:18px 0; color:var(--muted); font-size:13px }
+  .divider::before, .divider::after { content:''; flex:1; height:1px; background:#eef0f2; border-radius:2px }
+
+  /* social buttons */
+  .socials { display:flex; flex-direction:column; gap:10px; }
+  .social { height:48px; border-radius:12px; display:flex; align-items:center; gap:12px; padding:0 14px; border:1px solid #e7eaec; background:#fff; cursor:pointer; }
+  .social svg{ width:20px; height:20px; }
+
+  /* small login form card */
+  .login-card {
+    margin-top:18px; background:#fff; padding:18px; border-radius:16px; box-shadow:0 6px 16px rgba(10,20,30,0.04);
+  }
+  .field{ display:flex; flex-direction:column; gap:6px; margin-bottom:12px; }
+  label{ font-size:13px; color:var(--muted) }
+  input{
+    height:44px; padding:10px 12px; border-radius:10px; border:1px solid #e9ecf0; outline:none;
+    font-size:14px;
+  }
+  input:focus{ box-shadow:0 4px 10px rgba(17,24,39,0.06); border-color:#d7dce1 }
+
+  .form-footer { display:flex; justify-content:space-between; align-items:center; margin-top:8px; font-size:13px; color:var(--muted) }
+
+  /* small helper */
+  .muted{ color:var(--muted); font-size:13px }
+
+  @media(min-width:720px){
+    .phone{ transform:scale(.95); }
+  }
+
+  .google, .apple {
+    border-radius: 80px;
+    width: 27px;
+  }
